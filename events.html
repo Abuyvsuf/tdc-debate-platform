@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Debate Circle | Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html">THE DEBATE <span>CIRCLE</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+        <nav id="siteNav">
+          <a href="index.html">Home</a>
+          <a href="events.html" class="active">Events</a>
+          <a href="hall-of-fame.html">Hall of Fame</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html" class="btn btn-accent nav-cta">Register Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero dark-section">
+        <div class="container reveal">
+          <p class="eyebrow">TDC Events</p>
+          <h1>Debate seasons designed for growth and excellence</h1>
+          <p>Track workshops, qualifiers, and national-level showcases across the calendar.</p>
+        </div>
+      </section>
+
+      <section class="section-pad">
+        <div class="container">
+          <div class="filter-bar reveal" id="eventFilters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+            <button class="filter-btn" data-filter="past">Past</button>
+            <button class="filter-btn" data-filter="nationals">Nationals</button>
+            <button class="filter-btn" data-filter="regional">Regional</button>
+            <button class="filter-btn" data-filter="workshops">Workshops</button>
+          </div>
+
+          <div class="card-grid three-col" id="eventGrid">
+            <article class="glass-card reveal event-card" data-tags="upcoming workshops">
+              <span class="badge">Workshop</span>
+              <h3>Public Speaking Foundation Lab</h3>
+              <p class="meta">May 08, 2026 · Nairobi, Kenya</p>
+              <p>Hands-on coaching in speech structure, confidence, and delivery for junior debaters.</p>
+              <a href="contact.html" class="btn btn-secondary">Register</a>
+            </article>
+            <article class="glass-card reveal event-card" data-tags="upcoming regional">
+              <span class="badge">Regional</span>
+              <h3>Nairobi Inter-School Regional</h3>
+              <p class="meta">May 22, 2026 · Nairobi School</p>
+              <p>Citywide schools compete in prepared motions and impromptu rounds.</p>
+              <a href="contact.html" class="btn btn-secondary">Register</a>
+            </article>
+            <article class="glass-card reveal event-card" data-tags="upcoming regional">
+              <span class="badge">Regional</span>
+              <h3>Coastal County Qualifier</h3>
+              <p class="meta">June 12, 2026 · Mombasa</p>
+              <p>Regional ranking matches with adjudication clinics for debate societies.</p>
+              <a href="contact.html" class="btn btn-secondary">Register</a>
+            </article>
+            <article class="glass-card reveal event-card" data-tags="upcoming nationals">
+              <span class="badge">Nationals</span>
+              <h3>TDC National Debate Summit</h3>
+              <p class="meta">August 20, 2026 · Nairobi</p>
+              <p>National showcase featuring top qualifiers, alumni talks, and awards.</p>
+              <a href="contact.html" class="btn btn-primary">Register</a>
+            </article>
+            <article class="glass-card reveal event-card muted" data-tags="past workshops">
+              <span class="badge">Workshop · Past</span>
+              <h3>Adjudication Essentials Clinic</h3>
+              <p class="meta">February 14, 2026 · Online</p>
+              <p>Training for teachers and mentors on fair, constructive adjudication standards.</p>
+              <a href="#" class="btn btn-secondary" aria-disabled="true">Completed</a>
+            </article>
+            <article class="glass-card reveal event-card muted" data-tags="past nationals">
+              <span class="badge">Nationals · Past</span>
+              <h3>National Finals 2025</h3>
+              <p class="meta">September 06, 2025 · Nairobi</p>
+              <p>Finalists from across Kenya competed in policy, civic, and ethics motions.</p>
+              <a href="#" class="btn btn-secondary" aria-disabled="true">Completed</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad section-alt">
+        <div class="container reveal">
+          <div class="section-head">
+            <p class="eyebrow">Season Timeline</p>
+            <h2>How a TDC season flows</h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline-step">
+              <span>01</span>
+              <h3>Regional</h3>
+              <p>Training workshops and local qualifiers build participation and foundational skills.</p>
+            </div>
+            <div class="timeline-step">
+              <span>02</span>
+              <h3>County</h3>
+              <p>County rounds raise standards through structured adjudication and peer review.</p>
+            </div>
+            <div class="timeline-step">
+              <span>03</span>
+              <h3>Nationals</h3>
+              <p>Top teams compete at the national summit and join alumni leadership tracks.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer dark-section">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="index.html">THE DEBATE <span>CIRCLE</span></a>
+          <p>We express our passion for young people through conversations and debates.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

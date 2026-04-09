@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Debate Circle | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html">THE DEBATE <span>CIRCLE</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+        <nav id="siteNav">
+          <a href="index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a href="hall-of-fame.html">Hall of Fame</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="contact.html" class="btn btn-accent nav-cta">Register Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero light-hero">
+        <div class="container reveal">
+          <p class="eyebrow">Get In Touch</p>
+          <h1>Join the conversation at The Debate Circle</h1>
+          <p>Whether you're a student, school leader, or sponsor, we'd love to hear from you.</p>
+        </div>
+      </section>
+
+      <section class="section-pad">
+        <div class="container contact-grid">
+          <div class="reveal">
+            <div class="tabs" data-tab-group="contact-tabs">
+              <button class="tab-btn active" data-tab="student">Student</button>
+              <button class="tab-btn" data-tab="school">School</button>
+              <button class="tab-btn" data-tab="sponsor">Sponsor</button>
+            </div>
+            <form class="glass-card contact-form" id="contactForm">
+              <label>
+                Full Name
+                <input type="text" name="name" placeholder="Your full name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                Phone
+                <input type="tel" name="phone" placeholder="+254 7xx xxx xxx" />
+              </label>
+              <label>
+                Subject
+                <input type="text" name="subject" id="subjectInput" placeholder="How can we support you?" required />
+              </label>
+              <label>
+                Message
+                <textarea name="message" rows="5" placeholder="Tell us about your interest..." required></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+
+          <aside class="glass-card reveal contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> hello@thedebatecircle.org</p>
+            <p><strong>Location:</strong> Nairobi, Kenya</p>
+            <p><strong>Social:</strong> Instagram · LinkedIn · X</p>
+            <div class="map-placeholder">
+              <p>Map Placeholder</p>
+              <span>Nairobi Hub · Youth Programs Office</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer dark-section">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="index.html">THE DEBATE <span>CIRCLE</span></a>
+          <p>We express our passion for young people through conversations and debates.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
